@@ -11,8 +11,8 @@ attr_reader
   end
 
   def valid?
-    sender = BankAccount.new(name)
-    receiver = BankAccount.new(name)
+    sender = BankAccount.new
+    receiver = BankAccount.new
     sender.valid?
     receiver.valid?
   end
