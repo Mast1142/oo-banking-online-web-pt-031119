@@ -11,12 +11,12 @@ attr_reader
   end
 
   def valid?
-    if sender.BankAccount.valid? == true && receiver.BankAccount.valid? == true
-      true
-    else
-      false
-    end
+    sender = BankAccount.new(name)
+    receiver = BankAccount.new(name)
+    sender.valid?
+    receiver.valid?
   end
+    
 
   def execute_transaction
   end
