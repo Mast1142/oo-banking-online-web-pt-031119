@@ -13,8 +13,8 @@ attr_reader :name
   def valid?
     sender = BankAccount.new(name)
     receiver = BankAccount.new(name)
-    sender.BankAccount.valid?
-    receiver.BankAccount.valid?
+    sender.valid?
+    receiver.valid?
   end
 
 
